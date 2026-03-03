@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artistry Haven Site</title>
+    <style>
+        *{
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            line-height: 1.5;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            overflow-x: hidden;
+        }
+        .header-cont{
+            background: linear-gradient( to right,#1fae4c,
+            #2452a7 );
+            width: 100vw;
+            height: 80vh;
+            color: white;
+            position: relative;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            position: sticky;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 10;
+        }
+
+        .nav-links{
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+        .nav-links li a{
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 15px;
+        }
+        .nav-links li a:hover{
+            color: #000;
+            background-color: #fff;
+            padding: 10px;
+        }
+        .caption{
+            margin: 13% 10%;
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: 100;
+        }
+        .bg-special{
+            background: linear-gradient(aqua,
+            beige) ;
+            color: #333333;
+        }
+        /*service section*/
+         .section-heading{
+            text-align: center;
+            margin: 50px 0 20px 0;
+            font-size: 2rem;
+            animation: scroll 5s infinite;
+         }
+           @keyframes scroll{
+            25%{
+                transform: translateX(-500px);
+            }
+
+            50%{
+                transform: translateX(-1000px);
+            }
+
+            75%{
+                transform: translateX(+200px);
+            }
+
+            100%{
+                transform: translateX(+150px);
+            }
+         }
+         .section-heading-border{
+            width: 100%;
+            height: 4px;
+            background-color: #2980b9;
+            margin: 0 auto 30px auto;
+         }
+         .services{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            text-align: center;
+            padding: 50px;
+         }
+         .service{
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0,0, 0.3);
+            border-radius: 10px;
+         }
+         img{
+            width: 250px;
+            height: 250px;
+            
+         }
+         /* gallery section */
+         .gallery{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+         }
+         .gallery-item{
+            width:30%
+         }
+
+         .gallery-item:hover{
+            transform:scale(1.1);
+            transition: .8s ease-in-out;
+         }
+
+         .gallery-item img{
+            
+            
+            border-radius: 10px;
+         }
+
+         /* testimonial section */
+        .testimonials{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            text-align: center;
+            padding: 50px;
+            background-color:   #3e4f22;
+        }
+        .testimonial-img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .testimonial{
+            background-color:  #d4a373;
+            border-radius: 1px solid #c9c9c9;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        /* team section  */
+        .teams{
+            display: flex;
+            gap: 40px;
+            text-align: center;
+            padding: 50px;
+            background-color: grey;
+        }
+        .team1{
+            margin-left: 100px;
+        }
+
+        .team-img{
+            width: 300px;
+            border-radius: 20px;
+        }
+
+        /* footer section  */
+        .footer-cont{
+             background-color: #222;
+            color: #aaa;
+            text-align: center;
+            padding: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <!--hero section-->
+    <header class="header-cont">
+        <nav class="navbar">
+        <div class="logo">
+            <h2>Artistry Haven</h2>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+             <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#team">Our Team</a></li>
+               <li><a href="contact.html">Contact </a></li>
+        </ul>
+    </nav>
+
+        <div class="caption">
+            <h1><span class="bg-special">Dive into aworld</span> 
+                where colours come alive, and <span class="bg-special">imagination takes flight</span></h1>
+                
+        </div> 
+    </header>
+
+    <!--Services section-->
+    <section class="sevices-cont">
+        <h2 class="section-heading">Our Services</h2>
+        <div class="section-heading-border"></div>
+
+        <div class="services">
+            <div class="service">
+                <div class="service-icon">
+                <img src="/images/pallete.jpg" alt="" >
+            </div>
+            <h3>Painting</h3>
+            <p>Explore a vibrantcollection of paintings that capture 
+                the essence of creativity and emotion</p>
+       </div>         
+                 <div class="service">
+                <div class="service-icon">
+                  <img src="/images/sculpture.jpg" alt="">
+            </div>
+            <h3>sculpture</h3>
+            <p>Discoverintricate sculptures that bring form
+                and textures to life, showcasing artistic mastery.</p>
+        </div>
+                 <div class="service">
+                <div class="service-icon">
+                  <img src="/images/camera.jpg" alt="" >
+            </div>
+            <h3>Digital arts</h3>
+            <p> Dive into a realm of digital artistry,where technology meets imagination 
+                to createstunning visuals</p>
+
+            </div>
+        </div>
+    </section>
+
+                    <!-- Gallery Section -->
+                     <section class="gallery-cont" id="gallery">
+                            <h2 class="section-heading">Gallery</h2>
+                            <div class="section-heading-border"></div>
+
+                            <div class="gallery">
+                                <div class="gallery-item">
+                                    <a href="/images/palette2.webp" target="_blank">
+                                        <img src="/images/palette2.webp" alt="art1">
+                                    </a>
+                                </div>
+                        
+                                <div class="gallery-item">
+                                    <a href="/images/sculpture2.jpg" target="_blank">
+                                        <img src="/images/sculpture2.jpg" alt="art2">
+                                    </a>
+                                </div>
+                                  
+
+                        
+                                <div class="gallery-item">
+                                    <a href="/images/digart1.jpg" target="_blank">
+                                        <img src="/images/digart1.jpg" alt="art3">
+                                    </a>
+                                </div>
+                                 
+
+                              
+                                <div class="gallery-item">
+                                    <a href="/images/palette5.avif" target="_blank">
+                                        <img src="/images/palette5.avif" alt="art4">
+                                    </a>
+                                </div>
+                                 
+
+                                
+                                <div class="gallery-item">
+                                    <a href="/images/sculpture3" target="_blank">
+                                        <img src="/images/sculpture3" alt="art5">
+                                    </a>
+                                </div>
+                                 
+
+                              
+                                <div class="gallery-item">
+                                    <a href="/images/digart4.jpg" target="_blank">
+                                        <img src="/images/digart4.jpg" alt="art6">
+                                    </a>
+                                </div>
+                                 
+
+                               
+                                <div class="gallery-item">
+                                    <a href="/images/sculpture4.webp" target="_blank">
+                                        <img src="/images/sculpture4.webp" alt="art7">
+                                    </a>
+                                </div>
+                                 
+                                
+                                <div class="gallery-item">
+                                    <a href="/images/palette 3.jpg" target="_blank">
+                                        <img src="/images/palette 3.jpg" alt="art8">
+                                    </a>
+                                </div>
+                               
+
+                               
+                                <div class="gallery-item">
+                                    <a href="/images/digart2.jpg" target="_blank">
+                                        <img src="/images/digart2.jpg" alt="art9">
+                                    </a>
+                                </div>
+                                  
+
+                                
+                                <div class="gallery-item">
+                                    <a href="/images/digart5.avif" target="_blank">
+                                        <img src="/images/digart5.avif" alt="art10">
+                                    </a>
+                                </div>
+                            
+                            </div>
+         </section>
+                    <!-- gallery section ends -->
+                        <!-- testimonials section  -->
+                         <section class="testimonials-cont">
+                                <h2 class="section-heading">What Our Clients Says</h2>
+                                <div class="section-heading-border"></div>
+
+                                <div class="testimonials">
+                                    <div class="testimonial">
+                                        <img src="/images/682642.jpg" alt="" class="testimonial-img">
+                                        <p>"Artistry Haven transformed my living space 
+                                            with their stunning paintings. Truly a haven for art lovers!"</p>
+                                            <h4> - Sarah L...</h4>
+                                    </div>
+
+                                    <div class="testimonial">
+                                        <img src="/images/683168.jpg" alt="" class="testimonial-img">
+                                        <p>"The sculptures I purchased are exquisite.
+                                            The craftsmenship and attention to detail are unparalled"</p>
+                                            <h4>- Mark D...</h4>
+                                    </div>
+
+                                    <div class="testimonial">
+                                        <img src="/images/1674201.jpg" alt="" class="testimonial-img">
+                                        <p>"I was blown away by the digital art collection.
+                                            The creativity and innovation are truly inspiring!"</p>
+                                            <h4>- Emily R...</h4>
+                                    </div>
+
+                                </div>
+                </section>
+
+                <!-- Our team section  -->
+                 <section class="team-cont" id="team">
+                    <h2 class="section-heading">Our Team</h2>
+                    <div class="section-heading-border"></div>
+                    <div class="teams">
+                        <div class="team1">
+                        <img src="/images/profile image.png" alt="" srcset="" class="team-img">
+                        <h3>Oga_boss</h3>
+                        <p>Founder</p>
+                    </div>
+
+                        <div>
+                        <img src="/images/1663068-1366x768-[DesktopNexus.com].jpg" alt="" srcset=""  class="team-img">
+                        <h3>Satoru Gojo</h3>
+                        <p>Designer</p>
+                    </div>
+
+                    <div >
+                        <img src="/images/WhatsApp Image 2026-02-10 at 09.32.39.jpeg" alt="" srcset=""  class="team-img">
+                        <h3>Kakasji Hatake</h3>
+                        <p>Developer</p>
+                    </div>
+                       </div>
+                 </section>
+
+                    <!-- footer section  -->
+                 <footer class="footer-cont">
+                        <div class="footer-col">
+                            <h2>Artistry Haven</h2>
+                        </div>
+
+                        <div class="footer-col">
+                            <h3>Contact us</h3>
+                            <p>779-996-3467</p>
+                            <p>artistryhavengmail.com</p>
+                            <p>10 free st JKL LU</p>
+                        </div>
+
+                        <div class="footer-col">
+                        <h3>Contact us</h3>
+                        icons
+                        </div>
+                 </footer>
+    </body>
+</html> 
